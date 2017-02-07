@@ -1,0 +1,27 @@
+{
+    "name": "robloach/retroarch-theme-fontawesome",
+    "require": {
+        "symfony/yaml": "^3.2",
+        "symfony/process": "^3.2",
+        "libretro/retroarch-assets": "1.0.0"
+    },
+    "scripts": {
+    	"test": "php src/build.php",
+        "clean": "rm -f png/*"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "libretro/retroarch-assets",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/libretro/retroarch-assets.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "license": "MIT"
+}
