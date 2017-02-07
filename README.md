@@ -8,7 +8,7 @@
 
 - [Material Design Icons](https://materialdesignicons.com/)
 - [Roboto Font](https://fonts.google.com/specimen/Roboto)
-- [Material Design Background](http://more-sky.com/WDF-138466.html)
+- [Material Design Background](https://plus.google.com/photos/113550421981345608090/album/6136631293978128145/6136631297216674322?authkey=CLTMkN6I34expAE)
 
 ## Install
 
