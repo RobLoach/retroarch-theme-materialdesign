@@ -29,6 +29,7 @@ Lutro: heart-box
 Lutro-content: heart
 DOS-content: floppy
 loadstate: upload
+netplay: account-multiple
 movie: file-video
 movies: video
 music: file-music
@@ -40,6 +41,7 @@ reload: reload
 resume: play-pause
 retroarch: home
 run: play
+room: account-multiple-outline
 savestate: download
 screenshot: camera
 setting: settings
