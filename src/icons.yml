@@ -29,7 +29,7 @@ Lutro: heart-box
 Lutro-content: heart
 DOS-content: floppy
 loadstate: upload
-netplay: account-multiple
+netplay: lan
 movie: file-video
 movies: video
 music: file-music
@@ -41,11 +41,11 @@ reload: reload
 resume: play-pause
 retroarch: home
 run: play
-room: account-multiple-outline
+room: lan-connect
 savestate: download
 screenshot: camera
 setting: settings
-settings: account
+settings: account-settings-variant
 subsetting: wrench
 undo: undo
 wifi: access-point
