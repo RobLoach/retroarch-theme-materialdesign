@@ -1,7 +1,7 @@
 # This is a list of the RetroArch icons, mapped to Material Design icons.
 
 achievement-list: trophy
-add: plus
+add: folder-plus
 arrow: chevron-left
 battery-charging: battery-charging
 battery-full: battery
@@ -16,7 +16,7 @@ core-options: settings
 core-shader-options: eye
 cursor: bullseye
 database: database
-default: folder
+default: folder-star
 default-content: file
 file: file
 folder: folder
