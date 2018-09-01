@@ -34,18 +34,18 @@ foreach ($icons as $destination => $id) {
 
 		// Write out the icon.
 		if ($destination == 'battery-charging' || $destination == 'battery-full' || $destination == 'clock') {
-			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 75 label:$char png/$destination.png");
+			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 75 label:$char 'png/$destination.png'");
 			$process->run();
 			usleep(250000);
 		}
 		else {
-			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 230 label:$char png/$destination.png");
+			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 230 label:$char 'png/$destination.png'");
 			$process->run();
 			usleep(250000);
 		}
 
 		// Size it correctly.
-		$process = new Process("convert png/$destination.png -gravity Center  -background none -extent 256x256 png/$destination.png");
+		$process = new Process("convert png/$destination.png -gravity Center  -background none -extent 256x256 'png/$destination.png'");
 		$process->run();
 		usleep(250000);
 	}

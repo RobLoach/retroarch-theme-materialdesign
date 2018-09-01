@@ -1,6 +1,7 @@
 # This is a list of the RetroArch icons, mapped to Material Design icons.
 
 achievement-list: trophy
+add-favorite: heart
 add: folder-plus
 arrow: chevron-left
 battery-charging: battery-charging
@@ -18,6 +19,8 @@ cursor: bullseye
 database: database
 default: folder-star
 default-content: file
+favorites: star-circle
+favorites-content: star-outline
 file: file
 folder: folder
 Ffmpeg: video
@@ -29,15 +32,47 @@ Lutro: heart-box
 Lutro-content: heart
 DOS-content: floppy
 loadstate: upload
-netplay: lan
+menu_achievements: trophy
+menu_audio: volume-high
+menu_drivers: screwdriver
+menu_exit: close
+menu_frameskip: skip-forward
+menu_help: help
+menu_info: information
+menu_latency: timer
+menu_log: paperclip
+menu_mixer: tune
+menu_network: access-point-network
+menu_notifications: bell
+menu_osd: projector-screen
+menu_overlay: projector-screen
+menu_override: backburger
+menu_playlist: playlist-check
+menu_power: power
+menu_privacy: vpn
+menu_quickmenu: menu
+menu_record: record
+menu_rewind: rewind
+menu_saving: content-save
+menu_ui: camera-metering-matrix
+menu_updater: update
+menu_user: account
 movie: file-video
 movies: video
 music: file-music
 musics: library-music
-off: toggle-switch-off
-on: toggle-switch
+netplay: lan
+"netplay - LAN Room-locked": close-network
+"netplay - LAN Room": console-network
+"netplay - iRoom-locked": close-network
+"netplay - iRoom": access-point-network
+"netplay - rooms-locked": close-network
+"netplay - rooms": account-network
+"off": toggle-switch-off
+"on": toggle-switch
 pointer: cursor-default
 reload: reload
+rename: rename-box
 resume: play-pause
 retroarch: home
 run: play
