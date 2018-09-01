@@ -4,7 +4,7 @@
   "description": "[RetroArch](https://www.libretro.com/index.php/retroarch-2/) custom theme that incorporates [Font-Awesome](http://fontawesome.io/) icons into Monochrome.",
   "main": "index.js",
   "dependencies": {
-    "mdi": "^1.8.36"
+    "mdi": "^2.2.43"
   },
   "devDependencies": {},
   "scripts": {
