@@ -1,5 +1,8 @@
 # This is a list of the RetroArch icons, mapped to Material Design icons.
 
+# Left: Retroarch Icon Name
+# Right: Material Design Icon Name
+
 achievement-list: trophy
 add-favorite: heart
 add: folder-plus
@@ -7,39 +10,39 @@ arrow: chevron-left
 battery-charging: battery-charging
 battery-full: battery
 clock: clock
-close: close
-core-infos: information
-core: rocket
+close: close-circle
 core-cheat-options: star-half
 core-disk-options: content-save-settings
+core-infos: information-outline
 core-input-remapping-options: google-controller
-Libretro - Pad: google-controller
 core-options: settings
 core-shader-options: eye
+core: rocket
 cursor: bullseye
 database: database
-default: folder-star
 default-content: file
-favorites: star-circle
-favorites-content: star-outline
+default: folder
+DOS-content: floppy
+favorites-content: heart-box-outline
+favorites: heart-box
+Ffmpeg-conent: file-video
+Ffmpeg: video
 file: file
 folder: folder
-Ffmpeg: video
-Ffmpeg-conent: file-video
 history: history
-image: file-image
+image: image
 images: folder-image
-Lutro: heart-box
-Lutro-content: heart
-DOS-content: floppy
 loadstate: upload
+Libretro - Pad: google-controller
+Lutro-content: heart
+Lutro: heart-box
 menu_achievements: trophy
 menu_audio: volume-high
 menu_drivers: screwdriver
 menu_exit: power
 menu_frameskip: skip-forward
 menu_help: help
-menu_info: information
+menu_info: information-outline
 menu_latency: timer
 menu_log: format-list-bulleted
 menu_mixer: tune
@@ -57,31 +60,31 @@ menu_rewind: rewind
 menu_saving: content-save
 menu_ui: camera-metering-matrix
 menu_updater: update
-menu_user: account
+menu_user: account-settings
 movie: file-video
 movies: video
-music: file-music
-musics: library-music
-netplay: lan
-"netplay - LAN Room-locked": close-network
-"netplay - LAN Room": console-network
-"netplay - iRoom-locked": close-network
-"netplay - iRoom": access-point-network
-"netplay - rooms-locked": close-network
-"netplay - rooms": account-network
+music: music-box-outline
+musics: music-box
+netplay: network
+netplay - LAN Room: console-network
+netplay - LAN Room-locked: close-network
+netplay - iRoom: access-point-network
+netplay - iRoom-locked: close-network
+netplay - rooms: account-network
+netplay - rooms-locked: close-network
 off: toggle-switch-off
 on: toggle-switch
 pointer: cursor-default
 reload: reload
 rename: rename-box
 resume: play-pause
-retroarch: home
-run: play
+retroarch: home-circle
 room: lan-connect
+run: play
 savestate: download
 screenshot: camera
 setting: settings
-settings: account-settings-variant
+settings: settings-box
 subsetting: wrench
 undo: undo
 wifi: access-point

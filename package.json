@@ -1,13 +1,13 @@
 {
   "name": "retroarch-theme-materialdesign",
-  "version": "0.0.1",
+  "version": "3.0.0",
   "description": "[RetroArch](https://www.libretro.com/index.php/retroarch-2/) custom theme that incorporates [Font-Awesome](http://fontawesome.io/) icons into Monochrome.",
   "main": "index.js",
   "dependencies": {
-    "mdi": "^2.2.43"
+    "@mdi/font": "^2.7.94"
   },
-  "devDependencies": {},
   "scripts": {
+    "preinstall": "composer install",
     "test": "composer test"
   },
   "author": "Rob Loach",
