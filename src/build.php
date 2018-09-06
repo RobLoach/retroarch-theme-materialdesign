@@ -8,6 +8,7 @@
 
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Process\Process;
+use RuntimeException;
 
 require_once 'vendor/autoload.php';
 
@@ -23,12 +24,18 @@ copy('src/bg.png', 'png/bg.png');
 // Load the icons to generate.
 $yaml = file_get_contents('src/icons.yml');
 $icons = Yaml::parse($yaml);
+$total = count($icons);
+$num = 0;
 
 // Loop through each icon.
 foreach ($icons as $destination => $id) {
+	$percent = ($num++ / $total) * 100;
+
 	// Load the Unicode for the Font Awesome icon.
 	$unicode = findUnicode($id);
 	if ($unicode) {
+		$displaypercent = number_format($percent, 0);
+		echo "$displaypercent%\t$id: ";
 		// Load the character for the icon.
 		$char = unicodeToChar($unicode);
 
@@ -36,21 +43,19 @@ foreach ($icons as $destination => $id) {
 		if ($destination == 'battery-charging' || $destination == 'battery-full' || $destination == 'clock') {
 			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 75 label:$char 'png/$destination.png'");
 			$process->run();
-			usleep(250000);
 		}
 		else {
-			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -pointsize 230 label:$char 'png/$destination.png'");
+			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/mdi/fonts/materialdesignicons-webfont.ttf -trim -pointsize 512 label:$char 'png/$destination.png'");
 			$process->run();
-			usleep(250000);
 		}
-
 		// Size it correctly.
-		$process = new Process("convert png/$destination.png -gravity Center  -background none -extent 256x256 'png/$destination.png'");
+		usleep(500);
+		$process = new Process("convert png/$destination.png -gravity center -background none -extent 512x512 'png/$destination.png'");
 		$process->run();
-		usleep(250000);
+		echo "$destination\n";
 	}
 	else {
-		echo "Not found $id\n";
+		throw new RuntimeException("When building $destination.png, the source of $id was not found.");
 	}
 }
 

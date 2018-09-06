@@ -10,9 +10,10 @@ clock: clock
 close: close
 core-infos: information
 core: rocket
-core-cheat-options: star
+core-cheat-options: star-half
 core-disk-options: content-save-settings
-core-input-remapping-options: xbox-controller
+core-input-remapping-options: google-controller
+Libretro - Pad: google-controller
 core-options: settings
 core-shader-options: eye
 cursor: bullseye
@@ -35,12 +36,12 @@ loadstate: upload
 menu_achievements: trophy
 menu_audio: volume-high
 menu_drivers: screwdriver
-menu_exit: close
+menu_exit: power
 menu_frameskip: skip-forward
 menu_help: help
 menu_info: information
 menu_latency: timer
-menu_log: paperclip
+menu_log: format-list-bulleted
 menu_mixer: tune
 menu_network: access-point-network
 menu_notifications: bell
@@ -68,8 +69,8 @@ netplay: lan
 "netplay - iRoom": access-point-network
 "netplay - rooms-locked": close-network
 "netplay - rooms": account-network
-"off": toggle-switch-off
-"on": toggle-switch
+off: toggle-switch-off
+on: toggle-switch
 pointer: cursor-default
 reload: reload
 rename: rename-box
