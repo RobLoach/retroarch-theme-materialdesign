@@ -7,9 +7,10 @@ achievement-list: trophy
 add-favorite: heart
 add: folder-plus
 arrow: chevron-left
-battery-charging: battery-charging
-battery-full: battery
-clock: clock
+# The battery and clock icons are disabled due to sizing issues
+#battery-charging: battery-charging
+#battery-full: battery
+#clock: clock
 close: close-circle
 core-cheat-options: star-half
 core-disk-options: content-save-settings

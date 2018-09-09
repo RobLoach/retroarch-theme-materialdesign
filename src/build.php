@@ -40,14 +40,9 @@ foreach ($icons as $destination => $id) {
 		$char = unicodeToChar($unicode);
 
 		// Write out the icon.
-		if ($destination == 'battery-charging' || $destination == 'battery-full' || $destination == 'clock') {
-			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -pointsize 75 label:$char 'node_modules/$destination.png'");
-			$process->run();
-		}
-		else {
-			$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize 512 label:$char 'node_modules/$destination.png'");
-			$process->run();
-		}
+		$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize 512 label:$char 'node_modules/$destination.png'");
+		$process->run();
+
 		// Size it correctly.
 		usleep(500);
 		$process = new Process("convert 'node_modules/$destination.png' -gravity center -background none -extent 512x512 'png/$destination.png'");
