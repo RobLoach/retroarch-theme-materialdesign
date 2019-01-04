@@ -40,7 +40,8 @@ foreach ($icons as $destination => $id) {
 		$char = unicodeToChar($unicode);
 
 		// Write out the icon.
-		$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize 512 label:$char 'node_modules/$destination.png'");
+		$size = iconSize($destination);
+		$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize $size label:$char 'node_modules/$destination.png'");
 		$process->run();
 
 		// Size it correctly.
@@ -55,6 +56,21 @@ foreach ($icons as $destination => $id) {
 	else {
 		throw new RuntimeException("When building $destination.png, the source of $id was not found.");
 	}
+}
+
+function iconSize($icon) {
+	$size = 512;
+	switch ($icon) {
+		case 'on':
+		case 'off':
+			$size *= 0.65;
+			break;
+		case 'subsetting':
+			$size *= 0.8;
+			break;
+	}
+
+	return $size;
 }
 
 /**

@@ -20,6 +20,8 @@ core-options: settings
 core-shader-options: eye
 core: rocket
 cursor: bullseye
+ChaiLove-content: heart
+ChaiLove: heart-box
 database: database
 default-content: file
 default: folder
@@ -62,6 +64,11 @@ menu_saving: content-save
 menu_ui: camera-metering-matrix
 menu_updater: update
 menu_user: account-settings
+menu_video: movie
+menu_volume_max: volume-high
+menu_volume_med: volume-medium
+menu_volume_min: volume-low
+menu_volume_mute: volume-mute
 movie: file-video
 movies: video
 music: music-box-outline
