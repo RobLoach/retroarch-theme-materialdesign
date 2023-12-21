@@ -7,16 +7,23 @@ achievement-list: trophy
 add-favorite: heart
 add: folder-plus
 arrow: chevron-left
-# The battery and clock icons are disabled due to sizing issues
+# The battery icons are disabled due to sizing issues
+#battery-20
+#battery-40
+#battery-60
+#battery-80
 #battery-charging: battery-charging
 #battery-full: battery
+#bg
+bluetooth: bluetooth
+# The clock icon is disabled due to sizing issues
 #clock: clock
 close: close-circle
 core-cheat-options: star-half
 core-disk-options: content-save-settings
 core-infos: information-outline
-core-input-remapping-options: google-controller
-core-options: settings
+core-input-remapping-options: controller
+core-options: cogs
 core-shader-options: eye
 core: rocket
 cursor: bullseye
@@ -25,6 +32,8 @@ ChaiLove: heart-box
 database: database
 default-content: file
 default: folder
+#dialog-slice:
+disc: album
 DOS-content: floppy
 favorites-content: heart-box-outline
 favorites: heart-box
@@ -35,16 +44,25 @@ folder: folder
 history: history
 image: image
 images: folder-image
+key-hover: key
+key: key-outline
+#lakka: 
 loadstate: upload
-Libretro - Pad: google-controller
+Libretro - Pad: controller
 Lutro-content: heart
 Lutro: heart-box
 menu_achievements: trophy
+menu_add: plus
+menu_add_cog: plus-circle
+menu_apply_toggle: check-all
 menu_audio: volume-high
+menu_brightness: brightness-5
+menu_check: check
 menu_drivers: screwdriver
 menu_exit: power
 menu_frameskip: skip-forward
 menu_help: help
+menu_hourglass: timer-sand
 menu_info: information-outline
 menu_latency: timer
 menu_log: format-list-bulleted
@@ -60,7 +78,12 @@ menu_privacy: vpn
 menu_quickmenu: menu
 menu_record: record
 menu_rewind: rewind
+menu_room: connection
+menu_room_lan: lan-connect
+menu_room_relay: transit-connection-variant
 menu_saving: content-save
+menu_shutdown: power
+menu_stream: access-point
 menu_ui: camera-metering-matrix
 menu_updater: update
 menu_user: account-settings
@@ -82,6 +105,8 @@ netplay - rooms: account-network
 netplay - rooms-locked: close-network
 off: toggle-switch-off
 on: toggle-switch
+on_alt: toggle-switch-outline
+off_alt: toggle-switch-off-outline
 pointer: cursor-default
 reload: reload
 rename: rename-box
@@ -91,8 +116,8 @@ room: lan-connect
 run: play
 savestate: download
 screenshot: camera
-setting: settings
-settings: settings-box
+setting: cogs
+settings: cog
 subsetting: wrench
 undo: undo
 wifi: access-point

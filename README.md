@@ -14,16 +14,18 @@
 
 1. [Download the theme](https://github.com/RobLoach/retroarch-theme-materialdesign/archive/master.zip)
 2. Place the files in the `assets/xmb/custom` folder
-3. In the menu, select the *Custom* theme
-4. Quit and re-launch RetroArch
+3. In the menu, visit Settings > Appearance
+4. Set the Icon Theme, and select *Custom*
+4. Set the Font to `assets/xmb/custom/font.ttf`
 
 ### Build
 
 1. Install requirements
 
-  - PHP >= 5.6
-  - Node.js > 4
+  - PHP >= 8.2
+  - Node.js >= 16
   - [Composer](https://getcomposer.org)
+  - ImageMagick `convert`
 
 2. Install dependencies
   ```
