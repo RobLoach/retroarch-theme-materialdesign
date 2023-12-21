@@ -3,8 +3,8 @@
   "version": "3.0.0",
   "description": "[RetroArch](https://www.libretro.com/index.php/retroarch-2/) custom theme that incorporates [Font-Awesome](http://fontawesome.io/) icons into Monochrome.",
   "main": "index.js",
-  "dependencies": {
-    "@mdi/font": "^3.3.92"
+  "devDependencies": {
+    "@mdi/font": "^7.3.67"
   },
   "scripts": {
     "preinstall": "composer install",

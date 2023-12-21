@@ -1,8 +1,8 @@
 {
     "name": "robloach/retroarch-theme-fontawesome",
     "require": {
-        "symfony/yaml": "^3.2",
-        "symfony/process": "^3.2",
+        "symfony/yaml": "^7.0",
+        "symfony/process": "^7.0",
         "libretro/retroarch-assets": "1.0.0"
     },
     "scripts": {

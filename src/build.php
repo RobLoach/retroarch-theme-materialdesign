@@ -8,7 +8,6 @@
 
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Process\Process;
-use RuntimeException;
 
 require_once 'vendor/autoload.php';
 
@@ -41,20 +40,26 @@ foreach ($icons as $destination => $id) {
 
 		// Write out the icon.
 		$size = iconSize($destination);
-		$process = new Process("convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize $size label:$char 'node_modules/$destination.png'");
-		$process->run();
-
-		// Size it correctly.
-		usleep(500);
-		$process = new Process("convert 'node_modules/$destination.png' -gravity center -background none -extent 512x512 'png/$destination.png'");
+		file_put_contents("node_modules/char.utf8", $unicode);
+		//echo "convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize $size label:$char 'node_modules/$destination.png'";
+		$process = new Process(["convert -background none -fill '#f2f2f2' -font node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf -trim -pointsize $size label:$char 'node_modules/$destination.png'"]);
 		$process->enableOutput();
 		$process->run();
 		$error = $process->getErrorOutput();
 		echo $error;
 		echo "$id\n";
+
+		// Size it correctly.
+		// usleep(500);
+		// $process = new Process(["convert 'node_modules/$destination.png' -gravity center -background none -extent 512x512 'png/$destination.png'"]);
+		// $process->enableOutput();
+		// $process->run();
+		// $error = $process->getErrorOutput();
+		// echo $error;
+		// echo "$id\n";
 	}
 	else {
-		throw new RuntimeException("When building $destination.png, the source of $id was not found.");
+		throw new \RuntimeException("When building $destination.png, the source of $id was not found.");
 	}
 }
 
